@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+        <!-- Patch All Shelves -->
+        
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [thingClass [contains(text(), "Storage")] ]/building/defaultStorageSettings</xpath>
+				<value>
+					<defaultStorageSettings>
+						<priority>Normal</priority>
+						<filter>
+							<categories>
+							</categories>
+						</filter>
+					</defaultStorageSettings>
+				</value>
+            </li>
+			
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [thingClass [contains(text(), "Bookcase")] ]/building/defaultStorageSettings</xpath>
+				<value>
+					<defaultStorageSettings>
+						<priority>Normal</priority>
+						<filter>
+							<categories>
+							</categories>
+						</filter>
+					</defaultStorageSettings>
+				</value>
+            </li>
+			
+        <!-- Adaptive Storage -->
+			
+            <li MayRequire="adaptive.storage.framework" Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [thingClass [contains(text(), "AdaptiveStorage.ThingClass")] ]/building/defaultStorageSettings</xpath>
+				<value>
+					<defaultStorageSettings>
+						<priority>Normal</priority>
+						<filter>
+							<categories>
+							</categories>
+						</filter>
+					</defaultStorageSettings>
+				</value>
+            </li>
+			
+            <li MayRequire="reel.expanded.storage" Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [@ParentName = "AdaptiveStorageBase"]/building/defaultStorageSettings</xpath>
+				<value>
+					<defaultStorageSettings>
+						<priority>Normal</priority>
+						<filter>
+							<categories>
+							</categories>
+						</filter>
+					</defaultStorageSettings>
+				</value>
+            </li>
+			
+        </operations>
+    </Operation>
+	
+</Patch>

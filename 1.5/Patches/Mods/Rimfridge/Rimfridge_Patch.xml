@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[@Name = "FridgeBase"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "FridgeBase"]/building/defaultStorageSettings</xpath>
+					<value>
+	      				<defaultStorageSettings>
+    	    				<priority>Normal</priority>
+        					<filter>
+	          					<categories>
+        	  					</categories>
+	        				</filter>
+	      				</defaultStorageSettings>
+					</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+</Patch>

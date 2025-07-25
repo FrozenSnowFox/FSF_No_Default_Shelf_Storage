@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+        <!-- Patch All Shelves -->
+        
+            <li Class="PatchOperationReplace">
+				
+                <xpath>/Defs/ThingDef[thingClass="Building_Storage"]/building/defaultStorageSettings</xpath>
+					<value>
+						<defaultStorageSettings>
+							<priority>Normal</priority>
+							<filter>
+								<categories>
+								</categories>
+							</filter>
+						</defaultStorageSettings>
+					</value>
+            </li>
+			
+        </operations>
+    </Operation>
+	
+</Patch>

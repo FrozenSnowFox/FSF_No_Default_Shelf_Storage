@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "Storage_Basket"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Storage_Basket"]/building/fixedStorageSettings/priority</xpath>
+					<value>
+    	    			<priority>Normal</priority>
+					</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Storage_FabricHamper"]/building/fixedStorageSettings/priority</xpath>
+					<value>
+    	    			<priority>Normal</priority>
+					</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Storage_HazMatContainer"]/building/fixedStorageSettings/priority</xpath>
+					<value>
+    	    			<priority>Normal</priority>
+					</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Storage_Locker"]/building/fixedStorageSettings/priority</xpath>
+					<value>
+    	    			<priority>Normal</priority>
+					</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Storage_MedicineCabinet"]/building/fixedStorageSettings/priority</xpath>
+					<value>
+    	    			<priority>Normal</priority>
+					</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Storage_Skip"]/building/fixedStorageSettings/priority</xpath>
+					<value>
+    	    			<priority>Normal</priority>
+					</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Storage_TrayRack"]/building/fixedStorageSettings/priority</xpath>
+					<value>
+    	    			<priority>Normal</priority>
+					</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Storage_WoodenPallet"]/building/fixedStorageSettings/priority</xpath>
+					<value>
+    	    			<priority>Normal</priority>
+					</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+</Patch>
