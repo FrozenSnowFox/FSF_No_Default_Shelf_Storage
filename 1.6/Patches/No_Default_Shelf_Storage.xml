@@ -33,6 +33,19 @@
 				</value>
             </li>
 			
+            <li MayRequire="Ludeon.RimWorld.Odyssey" Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef [@Name = "OutfitStandBase"]/building/defaultStorageSettings</xpath>
+				<value>
+					<defaultStorageSettings>
+						<priority>Normal</priority>
+						<filter>
+							<categories>
+							</categories>
+						</filter>
+					</defaultStorageSettings>
+				</value>
+            </li>
+			
         <!-- Adaptive Storage -->
 			
             <li MayRequire="adaptive.storage.framework" Class="PatchOperationReplace">
