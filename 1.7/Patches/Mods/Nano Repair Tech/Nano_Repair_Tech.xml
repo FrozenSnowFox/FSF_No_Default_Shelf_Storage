@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "Ogre_1x1_Shelf"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Ogre_1x1_Shelf"]/building/defaultStorageSettings</xpath>
+					<value>
+	      				<defaultStorageSettings>
+    	    				<priority>Normal</priority>
+        					<filter>
+	          					<categories>
+        	  					</categories>
+	        				</filter>
+	      				</defaultStorageSettings>
+					</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Ogre_NanoTech_2x1_Shelf"]/building/defaultStorageSettings</xpath>
+					<value>
+	      				<defaultStorageSettings>
+    	    				<priority>Normal</priority>
+        					<filter>
+	          					<categories>
+        	  					</categories>
+	        				</filter>
+	      				</defaultStorageSettings>
+					</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "Ogre_NanoTech_1x1_Shelf"]/building/defaultStorageSettings</xpath>
+					<value>
+	      				<defaultStorageSettings>
+    	    				<priority>Normal</priority>
+        					<filter>
+	          					<categories>
+        	  					</categories>
+	        				</filter>
+	      				</defaultStorageSettings>
+					</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+</Patch>
